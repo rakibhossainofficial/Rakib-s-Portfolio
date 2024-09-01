@@ -304,15 +304,25 @@
         </div>
         <!-- ◥█ ============  Portfolio-section END ========== █◤ -->
     
+
         <div class="contact-section" id="contact-section">
             <h4 class="subtitles">Get in touch</h4>
             <h3 class="titles">Contact Me</h3>
-            <form action="./text.html" class="contact-form animated-border-box">
-                <input required="" placeholder="Write Your Name" class="input-field" type="text" />
-                <input required="" placeholder="Write Your Email" class="input-field" type="email" />
-                <textarea required="" placeholder="Write Your Message" cols="30" rows="7" class="input-field"></textarea>
-                <button class="sendMessage-btn">Send Message</button>
+
+            <!-- <form id="contactForm"   class="contact-form animated-border-box">
+                <input required id="name" name="name"   placeholder="Write Your Name" class="input-field" type="text" />
+                <input required id="email" name="email"  placeholder="Write Your Email" class="input-field" type="email" />
+                <textarea required id="message" name="message"   placeholder="Write Your Message" cols="30" rows="7" class="input-field"></textarea>
+                <button type="submit" class="sendMessage-btn" onclick="sendMail()">Send Message</button>
+            </form> -->
+
+            <form id="contactForm" class="contact-form animated-border-box">
+                <input required id="name" name="name" placeholder="Write Your Name" class="input-field" type="text" />
+                <input required id="email" name="email" placeholder="Write Your Email" class="input-field" type="email" />
+                <textarea required id="message" name="message" placeholder="Write Your Message" cols="30" rows="7" class="input-field"></textarea>
+                <button type="submit" class="sendMessage-btn">Send Message</button>
             </form>
+
         </div>
         <!-- ◥█ ============  Contact-section END ============ █◤ -->
     
@@ -373,12 +383,27 @@
     </div>
 
 
+    <!--=============== Email Js ===============-->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "nRfdOCjBa2CZPi--I",
+            });
+        })(); 
+    </script> -->
 
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("nRfdOCjBa2CZPi--I"); 
+        })();
+    </script>
     <!--=============== GSAP ===============-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--=============== ScrollTrigger ===============-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--=============== Script Js ===============-->
     <script src="script.js"></script>
 </body>
 </html>

@@ -204,3 +204,70 @@ gsap.from(".footer",{
     }
 
 });
+
+
+
+
+
+
+
+
+// ............... 
+
+// function sendMail() {
+//     let parms = {
+//         name : document.getElementById("name").value,
+//         email : document.getElementById("email").value,
+//         message : document.getElementById("message").value,
+//     }
+
+//     emailJs.send("service_2cyfmaj", "template_zu32sz8",parms).then(alert("Email sent Succesfully"))
+// }
+
+
+// function sendMail() {
+//     let parms = {
+//         name: document.getElementById("name").value,
+//         email: document.getElementById("email").value,
+//         message: document.getElementById("message").value,
+//     };
+
+//     emailjs.send("service_pppqv35", "template_zu32sz8", parms)
+//         .then(function(response) {
+//             alert("Email sent successfully!");
+//         })
+//         .catch(function(error) {
+//             console.error("Failed to send email:", error);
+//             alert("Failed to send the email. Please try again later.");
+//     });
+// }
+
+
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();  // Prevent default form submission
+
+    sendMail();  // Call the sendMail function
+});
+
+function sendMail() {
+    let parms = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+    };
+
+    emailjs.send("service_pppqv35", "template_zu32sz8", parms)
+    .then(function(response) {
+        alert("Email sent successfully!");
+
+         // Clear the form fields after successful submission
+         document.getElementById("contactForm").reset();
+    
+    })
+    .catch(function(error) {
+        console.error("Failed to send email:", error);
+        alert("Failed to send the email. Please try again later.");
+    });
+}
+

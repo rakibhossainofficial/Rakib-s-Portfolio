@@ -18,6 +18,10 @@ body {
 }
 
 
+::selection{
+  background-color: #9584E6;
+  color: black;
+}
 
 /* █ ============ SCROLL BAR START    ========== █ */
 
@@ -906,7 +910,6 @@ footer{
   font-size: 2.5vw;
   color: #9584E6;
 }
-
 
 
 

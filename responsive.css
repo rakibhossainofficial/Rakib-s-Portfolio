@@ -29,8 +29,19 @@
         gap: 2vw;
     }
 
-    about__description {
+    .about__description {
         font-size: 1vw;
+    }
+
+    .footer__container {
+        gap: 4.5vw;
+    }
+
+    .footer__list li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 800;
+        font-size: 1.5vw;
     }
 
 }
@@ -143,6 +154,10 @@
         margin-top: 4vw;
     }
 
+    .about-section {
+        justify-content: start;
+    }
+
     .about__container {
         display: flex;
         align-items: center;
@@ -170,6 +185,29 @@
         font-size: 1.5vw;
     }
 
+    .about__description {
+        height: 45vw;
+        font-size: 2.2vw;
+        width: 158%;
+        text-align: justify;
+        padding: 2vw;
+    }
+
+    .about__description span {
+        font-size: 2.5vw;
+    }
+
+    .about-button {
+        /* height: 5vw; */
+        /* width: 10vw; */
+        padding: 2vw 3vw;
+        border-radius: 10px;
+        font-weight: 800;
+        font-size: 3vw;
+        text-decoration: none;
+        background-color: #9584E6;
+        color: #0B111E;
+    }
     .portfolio-boxes {
         height: 43vw;
         width: 80%;
@@ -178,6 +216,10 @@
         justify-content: space-between;
         flex-direction: column;
         gap: 6vw;
+    }
+
+    .portfolio-section {
+        height: 105vh;
     }
 
     .project-img img {
