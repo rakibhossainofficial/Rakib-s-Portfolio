@@ -1,4 +1,5 @@
 @media (min-width: 1600px) {
+
     .home{
         gap: 7vw;
 
@@ -33,10 +34,6 @@
         font-size: 1vw;
     }
 
-    .footer__container {
-        gap: 4.5vw;
-    }
-
     .footer__list li a {
         text-decoration: none;
         color: black;
@@ -45,8 +42,6 @@
     }
 
 }
-
-
 
 @media (max-width:1100px) {
     .home {
@@ -63,13 +58,10 @@
     }
 
     .skill-box {
-        height: 33vw;
         width: 52%;
     }
 
 }
-
-
 
 @media (max-width:900px) {
     .home {
@@ -93,7 +85,6 @@
         font-size: 6vw;
     }
     .skill-box {
-        height: 54vw;
         width: 76%;
     }
 
@@ -102,7 +93,6 @@
         width: 26vw;
         font-size: 3vw;
         border-radius: 7vw;
-       
     }
 
     strong {
@@ -133,9 +123,6 @@
         padding: 2px;
     }
 
-    .skill-data {
-        margin: 5vw;
-    }
     .subtitles {
         font-size: 3vw;
     }
@@ -143,6 +130,7 @@
     .titles {
         font-size: 4.5vw;
     }
+
     .about__data {
         height: 403px;
         width: 60%;
@@ -198,8 +186,6 @@
     }
 
     .about-button {
-        /* height: 5vw; */
-        /* width: 10vw; */
         padding: 2vw 3vw;
         border-radius: 10px;
         font-weight: 800;
@@ -208,6 +194,7 @@
         background-color: #9584E6;
         color: #0B111E;
     }
+
     .portfolio-boxes {
         height: 43vw;
         width: 80%;
@@ -219,7 +206,7 @@
     }
 
     .portfolio-section {
-        height: 105vh;
+        height: 150vw;
     }
 
     .project-img img {
@@ -272,13 +259,14 @@
         height: 7.5vw;
         width: 7.5vw;
         border-radius: 6vw;
-        /* font-size: 10.5vw; */
     }
-
 }
 
-
-
+@media (max-width:600px) {
+    .skill-data{
+        font-size: 3vw;
+    }
+}
 
 @media (max-width:450px) {
 
@@ -295,7 +283,6 @@
         width: 10vw;
         font-size: 7vw;
         border-radius: 13.1vw;
-        /* background-color: rebeccapurple; */
     }
 
     .header ul {
@@ -416,23 +403,16 @@
 
     .skill-box {
         margin-top: 30vw;
-        height: 80vw;
         width: 90%;
         border-radius: 4vw;
     }
 
     .skill-box h2{
         font-size: 5vw;
-        margin-top:5vw;
     }
 
     .skill-list {
         margin-top: 1vw;
-    }
-
-    .skill-data {
-        margin: 9vw 0;
-        padding: 2vw;
     }
 
     .portfolio-boxes {
@@ -520,3 +500,4 @@
         gap: 6vw;
     }
 }
+

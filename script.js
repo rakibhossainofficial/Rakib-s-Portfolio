@@ -1,4 +1,4 @@
-// ..............click effect ..............
+// ◢█ ============ Click effect  START    ===========█◣
 
 document.querySelectorAll('.header ul li').forEach(function(item) {
     item.addEventListener('click', function() {
@@ -26,7 +26,7 @@ buttons.forEach(button => {
 
 
 
-/*◢█ ============ Loading Animation START    ===========█◣*/
+// ◢█ ============ Loading Animation START    ===========█◣
 
 document.addEventListener("DOMContentLoaded", function() {
     const loading = document.getElementById('loading');
@@ -44,14 +44,11 @@ document.addEventListener("DOMContentLoaded", function() {
         content.style.display = 'block';
     }, 2000); // Adjust the time as needed
 });
-/*◥█ ============  Loading Animation END    ========== █◤*/
+
+// ◥█ ============  Loading Animation END    ========== █◤
 
 
-
-
-
-
-/*◢█ ============ GSAP Animation START    ===========█◣*/
+// ◢█ ============ GSAP Animation START    ===========█◣
 
 gsap.from("marquee",{
     opacity:0,
@@ -133,7 +130,6 @@ gsap.from(".skill-box",{
     opacity:0,
     duration:2,
     y:-50,
-    // rotate:20,
     scale:0,
     delay:1.5,
     stagger:1,
@@ -146,8 +142,6 @@ gsap.from(".skill-box",{
     }
 
 });
-
-
 
 gsap.from(".my-projects",{
     opacity:0,
@@ -167,8 +161,6 @@ gsap.from(".my-projects",{
 
 });
 
-
-
 gsap.from(".contact-form",{
     opacity:0,
     duration:3,
@@ -185,8 +177,6 @@ gsap.from(".contact-form",{
     }
 
 });
-
-
 
 gsap.from(".footer",{
     opacity:0,
@@ -206,50 +196,15 @@ gsap.from(".footer",{
 });
 
 
-
-
-
-
-
-
-// ............... 
-
-// function sendMail() {
-//     let parms = {
-//         name : document.getElementById("name").value,
-//         email : document.getElementById("email").value,
-//         message : document.getElementById("message").value,
-//     }
-
-//     emailJs.send("service_2cyfmaj", "template_zu32sz8",parms).then(alert("Email sent Succesfully"))
-// }
-
-
-// function sendMail() {
-//     let parms = {
-//         name: document.getElementById("name").value,
-//         email: document.getElementById("email").value,
-//         message: document.getElementById("message").value,
-//     };
-
-//     emailjs.send("service_pppqv35", "template_zu32sz8", parms)
-//         .then(function(response) {
-//             alert("Email sent successfully!");
-//         })
-//         .catch(function(error) {
-//             console.error("Failed to send email:", error);
-//             alert("Failed to send the email. Please try again later.");
-//     });
-// }
-
-
+// ◢█ ============ Add EmailJs for get Email    ===========█◣
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();  // Prevent default form submission
+    event.preventDefault(); 
 
-    sendMail();  // Call the sendMail function
+    sendMail();  
 });
 
+        
 function sendMail() {
     let parms = {
         name: document.getElementById("name").value,
@@ -261,10 +216,11 @@ function sendMail() {
     .then(function(response) {
         alert("Email sent successfully!");
 
-         // Clear the form fields after successful submission
-         document.getElementById("contactForm").reset();
+        // Clear the form fields after successful submission
+        document.getElementById("contactForm").reset();
     
     })
+
     .catch(function(error) {
         console.error("Failed to send email:", error);
         alert("Failed to send the email. Please try again later.");

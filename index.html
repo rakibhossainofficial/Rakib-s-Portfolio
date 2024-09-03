@@ -10,8 +10,8 @@
     <link rel="shortcut icon" href="./asset's/Favicon.png" type="image/x-icon">
 </head>
 <body>
-    <!-- ◢█ ============ Loader ===========█◣ -->
-     <div class="loading" id="loading">
+    <!-- ◢█ ============ Loader ==============█◣ -->
+    <div class="loading" id="loading">
         <div id="loader" class="svg-fram">
             <div class="svg-frame">
                 <svg style="--i:0;--j:0;">
@@ -96,10 +96,12 @@
             </div>
         </div>
     </div>
-    <!-- ◥█ ============  Loader    ========== █◤ -->
+    <!-- ◥█ ============  Loader ============ █◤ -->
 
+    <!-- ◢█ ============ Container START    ===========█◣ -->
     <div class="container" id="content">
-    
+
+        <!-- ◢█ ============ Home-section START    ============█◣ -->
         <div class="home" id="home">
             <div class="header">
                 <ul>
@@ -133,7 +135,7 @@
             </marquee>
     
             <div class="home-button">
-                <a href="./Assingment Cover page.pdf" id="download-btn" download="">
+                <a href="./asset's/Rakib's Resume.pdf" id="download-btn" download="">
     
                     <button type="button" class="btn">
                         <strong>Download Cv</strong>
@@ -151,18 +153,14 @@
                 <a href="#about" id="about-btn">About</a>
             </div>
         </div>
-        <!-- ◥█ ============  Home-section END    =========== █◤ -->
+        <!-- ◥█ ============  Home-section END    ============ █◤ -->
     
-        <section class="about-section" id="about">
+        <!-- ◢█ ============  About-secton START    ===========█◣ -->
+        <div class="about-section" id="about">
             <h4 class=" subtitles">My Intro</h4>
             <h3 class=" titles">About Me</h3>
     
             <div class="about__container container grid">
-                <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1624225322900-690eab653586?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww"
-                        alt="" class="about__img">
-                </div>
-    
                 <div class="about__data">
                     <div class="about__info">
                         <div class="about__box">
@@ -190,15 +188,23 @@
     
                     <a href="#contact-section" class="about-button">Contact Me</a>
                 </div>
+
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1542178243-bc20204b769f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8"
+                        alt="Profile Picture" class="about__img">
+                </div>
+    
+
             </div>
-        </section>
+        </div>
         <!-- ◥█ ============  About-section END  ============= █◤ -->
     
+        <!-- ◢█ ============  skill-section START   ===========█◣ -->
         <div class="skill-section" id="skill-section">
             <h4 class=" subtitles">My Abilities</h4>
             <h3 class=" titles">My Expertise</h3>
             <div class="skill-box">
-                <h2>Frontend Development</h2>
+                <h2 class="skill-box-title">Frontend Development</h2>
                 <div class="skill-group">
                     <div class="skill-list">
                         <div class="skill-data">
@@ -231,15 +237,7 @@
                             <i class='bx bxs-badge-check'></i>
     
                             <div>
-                                <h3 class="skills__name">BOOTSTRAP</h3>
-                                <span class="skills__level">Intermediate</span>
-                            </div>
-                        </div>
-                        <div class="skill-data">
-                            <i class='bx bxs-badge-check'></i>
-    
-                            <div>
-                                <h3 class="skills__name">GIT & GITHUB</h3>
+                                <h3 class="skills__name">REACT JS</h3>
                                 <span class="skills__level">Advanced</span>
                             </div>
                         </div>
@@ -247,7 +245,41 @@
                             <i class='bx bxs-badge-check'></i>
     
                             <div>
-                                <h3 class="skills__name">REACT</h3>
+                                <h3 class="skills__name">TAILWIND</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-data">
+                            <i class='bx bxs-badge-check'></i>
+    
+                            <div>
+                                <h3 class="skills__name">BOOTSTRAP</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-data">
+                            <i class='bx bxs-badge-check'></i>
+    
+                            <div>
+                                <h3 class="skills__name">GIT</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-data">
+                            <i class='bx bxs-badge-check'></i>
+    
+                            <div>
+                                <h3 class="skills__name">GITHUB</h3>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-data">
+                            <i class='bx bxs-badge-check'></i>
+    
+                            <div>
+                                <h3 class="skills__name">FIGMA</h3>
                                 <span class="skills__level">Advanced</span>
                             </div>
                         </div>
@@ -255,9 +287,10 @@
                 </div>
             </div>
         </div>
-    
         <!-- ◥█ ============  skill-section END  ============= █◤ -->
     
+
+        <!-- ◢█ ============  Portfolio-section START   =======█◣ -->
         <div class="portfolio-section" id="portfolio-section">
             <div class="portfolio-title">
                 <h4 class="subtitles">My portfolio</h4>
@@ -272,7 +305,7 @@
                         <h4> The Text Matcher Tool is a powerful and user-friendly web application designed to help users
                             analyze and compare two blocks of text effortlessly.</h4>
                         <a href="https://wordandlinefinder.netlify.app/" target="_blank">Demo<i
-                                class='bx bx-right-arrow'></i></a>
+                            class='bx bx-right-arrow'></i></a>
                     </div>
                 </div>
     
@@ -304,17 +337,10 @@
         </div>
         <!-- ◥█ ============  Portfolio-section END ========== █◤ -->
     
-
+        <!-- ◢█ ============  Contact-section START   =========█◣ -->
         <div class="contact-section" id="contact-section">
             <h4 class="subtitles">Get in touch</h4>
             <h3 class="titles">Contact Me</h3>
-
-            <!-- <form id="contactForm"   class="contact-form animated-border-box">
-                <input required id="name" name="name"   placeholder="Write Your Name" class="input-field" type="text" />
-                <input required id="email" name="email"  placeholder="Write Your Email" class="input-field" type="email" />
-                <textarea required id="message" name="message"   placeholder="Write Your Message" cols="30" rows="7" class="input-field"></textarea>
-                <button type="submit" class="sendMessage-btn" onclick="sendMail()">Send Message</button>
-            </form> -->
 
             <form id="contactForm" class="contact-form animated-border-box">
                 <input required id="name" name="name" placeholder="Write Your Name" class="input-field" type="text" />
@@ -325,8 +351,8 @@
 
         </div>
         <!-- ◥█ ============  Contact-section END ============ █◤ -->
-    
-        <!--=============== FOOTER ===============-->
+
+        <!-- ◢█ ============  footer-section START   ==========█◣ -->
         <footer class="footer">
             <div class="footer__container ">
                 <h1 class="footer__title">Rakib</h1>
@@ -352,23 +378,23 @@
     
                 <ul class="footer__social">
                     <li class="footer__social-item">
-                        <a href="#" target="_blank" class="footer__social-link">
-                            <i class='bx bxl-facebook footer__social-icon'></i>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="#" target="_blank" class="footer__social-link">
-                            <i class='bx bxl-twitter footer__social-icon'></i>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="#" target="_blank" class="footer__social-link">
-                            <i class='bx bxl-linkedin footer__social-icon'></i>
+                        <a href="https://github.com/rakibhossainofficial" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-github' footer__social-icon ></i>
                         </a>
                     </li>
                     <li class="footer__social-item">
                         <a href="#" target="_blank" class="footer__social-link">
                             <i class='bx bxl-instagram footer__social-icon'></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://www.linkedin.com/in/rakib-hossain-88808931a/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-linkedin footer__social-icon'></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-twitter footer__social-icon'></i>
                         </a>
                     </li>
                 </ul>
@@ -381,29 +407,21 @@
         <!-- ◥█ ============  footer-section END    ========== █◤ -->
     
     </div>
+    <!-- ◥█ ============  Container End    ========== █◤ -->
 
 
-    <!--=============== Email Js ===============-->
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "nRfdOCjBa2CZPi--I",
-            });
-        })(); 
-    </script> -->
-
+    <!--=============== Email Js =====================-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
             emailjs.init("nRfdOCjBa2CZPi--I"); 
         })();
     </script>
-    <!--=============== GSAP ===============-->
+    <!--==================== GSAP ===================-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--=============== ScrollTrigger ===============-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!--=============== Script Js ===============-->
+    <!--=============== Script Js ====================-->
     <script src="script.js"></script>
 </body>
 </html>
