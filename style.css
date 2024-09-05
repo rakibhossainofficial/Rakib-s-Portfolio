@@ -482,6 +482,9 @@ z-index: -1;
   width: 76%;
   background-color: #0B111E;
   border-radius: 1.5vw;
+  background-size: cover;
+  /* background-position: center; */
+  object-fit: cover;
 }
 
 .about__data {
@@ -673,6 +676,7 @@ z-index: -1;
   width: 20vw;
   background-size: contain;
   object-fit: cover;
+  border-radius: 1vw;
 }
 
 
