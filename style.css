@@ -672,7 +672,7 @@ z-index: -1;
 
 
 .project-img img{
-  height: 14vw;
+  height: 14vw; 
   width: 20vw;
   background-size: contain;
   object-fit: cover;
@@ -682,7 +682,8 @@ z-index: -1;
 
 .project-des h4{
   font-size: 1vw;
-  text-align: start;
+  text-align: justify;
+  text-transform: capitalize;
   margin: 1vw 0;
 }
 
@@ -1036,4 +1037,3 @@ footer{
 }
 
 /*◥█ ============  Loading Animation END   ========== █◤*/
-
