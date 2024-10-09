@@ -195,34 +195,8 @@
         color: #0B111E;
     }
 
-    .portfolio-boxes {
-        height: 43vw;
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        gap: 6vw;
-    }
-
     .portfolio-section {
         height: 150vw;
-    }
-
-    .project-img img {
-        height: 20vw;
-        width: 32vw;
-        background-size: contain;
-        object-fit: cover;
-    }
-    .my-projects {
-        height: 89%;
-        width: 72%;
-        border-radius: 3vw;
-    }
-
-    .project-des h4 {
-        font-size: 2vw;
     }
 
     .contact-form {
@@ -415,17 +389,8 @@
         margin-top: 1vw;
     }
 
-    .portfolio-boxes {
-        height: 72%;
-        width: 80%;
-        gap: 4vw;
-    }
+  
 
-    .my-projects {
-        width: 100%;
-        padding: 10px;
-
-    }
 
     .project-des h4 {
         font-size: 3vw;
@@ -433,14 +398,12 @@
 
 
     .project-img img {
-        height: 31vw;
-        width: 52vw;
         background-size: contain;
         object-fit: cover;
     }
 
     .portfolio-section {
-        height: 110vh;
+        height: 190vh;
     }
 
     .contact-section {
