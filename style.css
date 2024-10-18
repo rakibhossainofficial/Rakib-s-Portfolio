@@ -839,7 +839,7 @@ text-align: start;
   }
 }
 
-/*  ◥█ ============  Contact-section END    ========== █◤  */
+/*◥█ ============  Contact-section END    ========== █◤  */
 
 /*◢█ ============  Footer Section START    ===========█◣*/
 footer{
@@ -861,7 +861,6 @@ footer{
   gap: 1.5vw;
 
 }
-
 
 .footer__list{
   display: flex;
@@ -891,7 +890,6 @@ footer{
 .footer__social li a i{
   font-size: 2vw;
   color: rgb(255, 255, 255);
-
 }
 
 .footer__social li{
@@ -904,7 +902,6 @@ footer{
   padding: 2px;
   border-radius: 2vw;
   font-size: 2.5vw;
-
 }
 
 .footer__social li:hover i{

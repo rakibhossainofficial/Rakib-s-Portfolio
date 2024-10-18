@@ -175,7 +175,6 @@ gsap.from(".contact-form",{
         end:"top 20%",
         scrub:2,
     }
-
 });
 
 gsap.from(".footer",{
@@ -196,7 +195,7 @@ gsap.from(".footer",{
 });
 
 
-// ◢█ ============ Add EmailJs for get Email    ===========█◣
+// ◢█ ============ Add EmailJs for get Email ===========█◣
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); 
