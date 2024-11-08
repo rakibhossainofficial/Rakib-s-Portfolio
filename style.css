@@ -902,6 +902,7 @@ footer{
   padding: 2px;
   border-radius: 2vw;
   font-size: 2.5vw;
+  
 }
 
 .footer__social li:hover i{
@@ -1051,3 +1052,23 @@ footer{
 }
 
 /*◥█ ============  Loading Animation END   ========== █◤*/
+
+
+/* cursor animation */
+
+.cursor{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  position:fixed;
+  mix-blend-mode:difference;  
+  transition: transform 0.2s ease;
+}
+
+
+.subtitles:hover .cursor{
+  transform: scale(4);
+}
+
+

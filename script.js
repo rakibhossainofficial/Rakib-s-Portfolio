@@ -226,3 +226,16 @@ function sendMail() {
     });
 }
 
+// cursor animation 
+
+const container = document.getElementById("content")
+const cursor = document.getElementById("cursor")
+
+container.addEventListener("mousemove", function (dets) {
+   gsap.to(cursor,{
+    x:dets.x,
+    y:dets.y,
+    duration:1,
+   })
+})
+
