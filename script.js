@@ -231,11 +231,30 @@ function sendMail() {
 const container = document.getElementById("content")
 const cursor = document.getElementById("cursor")
 
+
 container.addEventListener("mousemove", function (dets) {
    gsap.to(cursor,{
     x:dets.x,
     y:dets.y,
     duration:1,
+    ease:"back.out"
+    
    })
 })
 
+
+const bigCursors = document.querySelectorAll(".bigcursor");
+
+bigCursors.forEach(bigCursor => {
+    bigCursor.addEventListener("mouseenter", function () {
+        gsap.to(cursor, {
+            scale: 3
+        });
+    });
+
+    bigCursor.addEventListener("mouseleave", function () {
+        gsap.to(cursor, {
+            scale: 1
+        });
+    });
+});

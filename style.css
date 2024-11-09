@@ -15,6 +15,9 @@ html {
 body {
   background-color: #0B111E;
   color: #ffff;
+  cursor: url("./Cursor/cursor1copy.png"), auto;
+  cursor: url("./Cursor/Cursor Pointer.png") 12 12, auto;
+
 }
 
 
@@ -22,6 +25,7 @@ body {
   background-color: #9584E6;
   color: black;
 }
+
 /*◢█ ============ SCROLL BAR START    ===========█◣*/
 
 ::-webkit-scrollbar {
@@ -57,7 +61,9 @@ body {
   /*dot image background*/
   background-image: radial-gradient(rgba(255, 255, 255, 0.137) 2px, transparent 0);
   background-size: 30px 30px;
-  background-position: -5px -5px
+  background-position: -5px -5px;
+
+  
 }
 
 @keyframes move {
@@ -133,7 +139,7 @@ marquee {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  mix-blend-mode: difference;
 }
 
 marquee span {
@@ -184,6 +190,7 @@ marquee span:hover {
   font-size: 3vw;
   color: #9584E6;
   margin-top: 2vw;
+  z-index: 0;
 }
 
 
@@ -483,23 +490,21 @@ z-index: -1;
 }
 
 .about-img {
-  height: 400px;
+  height: 500px;
   width: 40%;
   display: flex;
   align-items: start;
   justify-content: flex-end;
+  position: relative;
 }
 
 
 .about-img img {
-  height: 100%;
-  width: 76%;
-  background-color: #0B111E;
-  border-radius: 1.5vw;
-  background-size: cover;
-  /* background-position: center; */
-  object-fit: cover;
+  border-radius: 1vw;
+  z-index: 1;
 }
+
+
 
 .about__data {
   height: 400px;
@@ -543,6 +548,8 @@ z-index: -1;
   font-size: 1vw;
   margin-bottom: 2vw;
   padding-right:8vw;
+  /* z-index: 111; */
+  mix-blend-mode: difference;
 }
 
 
@@ -565,7 +572,6 @@ z-index: -1;
 .about-button:hover{
   transition: 0.3s;
   background-color: #5e4bc0;
-
 }
 
 .about-section h2{
@@ -917,7 +923,7 @@ footer{
 
 .subtitles{
   font-size: 1vw;
-  color: #BDBDBD;
+  color: #ffffff;
 }
 
 
@@ -1057,8 +1063,8 @@ footer{
 /* cursor animation */
 
 .cursor{
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
   position:fixed;
@@ -1066,9 +1072,5 @@ footer{
   transition: transform 0.2s ease;
 }
 
-
-.subtitles:hover .cursor{
-  transform: scale(4);
-}
 
 

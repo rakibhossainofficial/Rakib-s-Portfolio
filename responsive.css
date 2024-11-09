@@ -317,7 +317,9 @@
     }
 
     .about-img img {
-        width: 73%;
+        border-radius: 10px;
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
     }
 
     .about__box {
@@ -328,7 +330,6 @@
         text-align: center;
         margin-right: 2vw;
         gap: 4vw;
-
     }
 
     .about__icon {
@@ -461,6 +462,10 @@
 
     .footer__list {
         gap: 6vw;
+    }
+
+    .cursor{
+        display: none;
     }
 }
 
